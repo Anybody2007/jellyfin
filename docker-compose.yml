@@ -7,11 +7,11 @@ services:
     networks:
       - jellyfin
     ports:
-      - 8080:8096
+      - 80:8096
     volumes:
       - config:/config
       - cache:/cache
-      - /mnt/sd_card:/media
+      - /location/of/your/libray:/media
     restart: 'unless-stopped'
     # Optional - alternative address used for autodiscovery
     # environment:
